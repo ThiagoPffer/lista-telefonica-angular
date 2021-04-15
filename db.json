@@ -9,58 +9,9 @@
         "categoria": "Celular",
         "preco": 4
       },
-      "data": "2021-04-14T13:17:08.024Z",
-      "id": 1
-    },
-    {
-      "nome": "Raquel Piffer",
-      "telefone": "9918-0652",
-      "operadora": {
-        "nome": "Tim",
-        "codigo": 15,
-        "categoria": "Celular",
-        "preco": 4
-      },
-      "data": "2021-04-14T13:41:30.708Z",
-      "id": 2
-    },
-    {
-      "nome": "Fábio Ramos",
-      "telefone": "9671-7138",
-      "operadora": {
-        "nome": "Tim",
-        "codigo": 15,
-        "categoria": "Celular",
-        "preco": 4
-      },
-      "data": "2021-04-14T13:41:52.035Z",
-      "id": 3
-    },
-    {
-      "nome": "Teste Serial",
-      "telefone": "9999-4444",
-      "operadora": {
-        "nome": "GVT",
-        "codigo": 43,
-        "categoria": "Fixo",
-        "preco": 8
-      },
-      "serial": "QP85G]WZ.2",
-      "data": "2021-04-15T11:28:09.561Z",
+      "serial": "BN JC6SU5)",
+      "data": "2021-04-15T14:47:47.779Z",
       "id": 4
-    },
-    {
-      "nome": "Thiago Piffer",
-      "telefone": "9866-5287",
-      "operadora": {
-        "nome": "Embratel",
-        "codigo": 51,
-        "categoria": "Fixo",
-        "preco": 10
-      },
-      "serial": "^><]V$#TTN",
-      "data": "2021-04-15T11:37:55.371Z",
-      "id": 5
     }
   ],
   "operadoras": [
