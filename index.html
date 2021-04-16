@@ -7,10 +7,18 @@
     <title>Lista Telefônica</title>
     <link rel="stylesheet" type="text/css" href="./lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="./css/ui.css">
 </head>
 <body ng-controller="listaTelefonicaCtrl">
     <div class="tabelaContainer bg-light p-5 mt-5 text-center">
         <h4 ng-bind="app"></h4>
+
+        
+
+        <!-- <ui-alert title="Ops, aconteceu um problema!">
+            {{error}}
+        </ui-alert> -->
+
         <input class="form-control mb-3" type="text" ng-model="criterioDeBusca" placeholder="O que você está buscando?">
         <table class="table table-striped">
             <tr>
@@ -25,7 +33,7 @@
             <tr ng-class="{selected: contato.selected}" ng-repeat="contato in contatos | limitTo: 20 | filter: {nome: criterioDeBusca} |  orderBy: criterioDeOrdenacao:direcaoDaOrdenacao">
                 <td><input type="checkbox" ng-model="contato.selected"></td>
                 <td>{{contato.serial}}</td>
-                <td>{{contato.nome | name | ellipsis:15}}</td>
+                <td title="{{contato.nome}}">{{contato.nome | name | ellipsis:15}}</td>
                 <td>{{contato.telefone}}</td>
                 <td>{{contato.operadora.nome}}</td>
                 <td>{{contato.data | date:'EEE dd/MM/yyyy HH:mm'}}</td>
@@ -37,6 +45,7 @@
         <form name="contatoForm">
             <input class="form-control" type="text" ng-model="contato.nome" name="nome" placeholder="Nome" ng-required="true" ng-minlength="10">
             <input class="form-control mt-1" type="text" ng-model="contato.telefone" name="telefone" placeholder="Telefone" ng-required="true" ng-pattern="/^\d{4,5}-\d{4}$/">
+            <input class="form-control mt-1" type="text" ng-model="contato.data" name="data" placeholder="Data" ui-date>
             <select class="form-control mt-1" ng-model="contato.operadora" ng-options="operadora.nome + ' ('+(operadora.preco | currency)+')' for operadora in operadoras | orderBy: 'nome'">
                 <option value="">Selecione uma operadora</option>
             </select>
@@ -77,5 +86,7 @@
     <script src="./js/services/serialGeneratorService.js"></script>
     <script src="./js/filters/nameFilter.js"></script>
     <script src="./js/filters/ellipsisFilter.js"></script>
+    <script src="./js/directives/uiAlertDirective.js"></script>
+    <script src="./js/directives/uiDateDirective.js"></script>
 </body>
 </html>
