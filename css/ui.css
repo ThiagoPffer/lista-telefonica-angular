@@ -1,3 +1,5 @@
+/* Alert */
+
 .ui-alert{
     background-color: #f2dede;
     padding: 20px;
@@ -15,4 +17,36 @@
 .ui-alert-message{
     color: #af4341;
     text-align: left;
+}
+
+/* Accordion */
+
+.ui-accordion-title{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+    padding: 15px;
+    margin: 15px 0;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.ui-accordion-title:hover{
+    filter: brightness(.9)
+}
+
+.ui-accordion-content{
+    text-align: left;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid rgb(211, 211, 211);
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    transition: .2s;
 }

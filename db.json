@@ -64,6 +64,19 @@
       "serial": "AI\"S\"7H^9)",
       "data": "2021-04-16T11:21:38.022Z",
       "id": 8
+    },
+    {
+      "data": "2021-04-19T11:06:21.431Z",
+      "nome": "Thiago Piffer",
+      "telefone": "9866-5287",
+      "operadora": {
+        "nome": "GVT",
+        "codigo": 43,
+        "categoria": "Fixo",
+        "preco": 8
+      },
+      "serial": ">U(/?U$E7#",
+      "id": 9
     }
   ],
   "operadoras": [
