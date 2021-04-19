@@ -14,45 +14,6 @@
       "id": 4
     },
     {
-      "nome": "perepeidos leperindas",
-      "telefone": "0332-3003",
-      "operadora": {
-        "nome": "Vivo",
-        "codigo": 31,
-        "categoria": "Celular",
-        "preco": 1
-      },
-      "serial": "C-C?F!\"8#^",
-      "data": "2021-04-16T11:17:08.075Z",
-      "id": 5
-    },
-    {
-      "nome": "teste nmovamente",
-      "operadora": {
-        "nome": "GVT",
-        "codigo": 43,
-        "categoria": "Fixo",
-        "preco": 8
-      },
-      "telefone": "4004-4403",
-      "serial": "7^VA?.W.?]",
-      "data": "2021-04-16T11:17:34.153Z",
-      "id": 6
-    },
-    {
-      "nome": "perepeidos aldemindas",
-      "telefone": "9866-5287",
-      "operadora": {
-        "nome": "GVT",
-        "codigo": 43,
-        "categoria": "Fixo",
-        "preco": 8
-      },
-      "serial": "U8 :&TU7KK",
-      "data": "2021-04-16T11:17:50.293Z",
-      "id": 7
-    },
-    {
       "nome": "Thiago Piffer",
       "telefone": "9866-5287",
       "operadora": {
@@ -77,6 +38,19 @@
       },
       "serial": ">U(/?U$E7#",
       "id": 9
+    },
+    {
+      "data": "2021-04-19T11:26:10.883Z",
+      "nome": "Refresh Branas",
+      "telefone": "19929-3323",
+      "operadora": {
+        "nome": "Claro",
+        "codigo": 11,
+        "categoria": "Celular",
+        "preco": 3
+      },
+      "serial": "RA_HB5PB@-",
+      "id": 10
     }
   ],
   "operadoras": [
