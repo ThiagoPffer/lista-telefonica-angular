@@ -15,6 +15,7 @@ angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function($sc
             carregarContatos();
         });
     }
+
     $scope.apagarContatos = function(contatos){
         contatos.filter(function(contato) {
             if(contato.selected){
@@ -24,14 +25,15 @@ angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function($sc
             };
         });
     }
+
     $scope.isContatoSelected = function(contatos){
         return contatos.some(function(contato){
             return contato.selected;
         });
     }
+
     $scope.ordernarPor = function(campo){
         $scope.criterioDeOrdenacao = campo;
         $scope.direcaoDaOrdenacao = !$scope.direcaoDaOrdenacao;
     }
-
 });

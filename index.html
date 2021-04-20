@@ -23,15 +23,24 @@
     <script src="./js/services/operadorasAPIService.js"></script>
     <script src="./js/config/serialGeneratorConfig.js"></script>
     <script src="./js/config/routeConfig.js"></script>
+    <script src="./js/config/interceptorConfig.js"></script>
     <script src="./js/value/configValue.js"></script>
     <script src="./js/filters/nameFilter.js"></script>
     <script src="./js/filters/ellipsisFilter.js"></script>
     <script src="./js/directives/uiAlertDirective.js"></script>
     <script src="./js/directives/uiDateDirective.js"></script>
+    <script src="./js/interceptors/timestampInterceptor.js"></script>
+    <script src="./js/interceptors/errorInterceptor.js"></script>
+    <script src="./js/interceptors/loadingInterceptor.js"></script>
 </head>
 <body>
-    <div class="tabelaContainer bg-light p-5 mt-5 text-center">
-        <div ng-view></div>
+    <div class="mt-5 text-center" ng-show="loading">
+        <h5>Carregando...</h5>
+    </div>
+    <div ng-hide="loading">
+        <div class="tabelaContainer bg-light p-5 mt-5 text-center">
+            <div ng-view></div>
+        </div>
     </div>
     <div ng-include="'./view/footer.html'"></div>
 </body>

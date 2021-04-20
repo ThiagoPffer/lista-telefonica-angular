@@ -13,7 +13,7 @@
     {{error}}
 </ui-alert> -->
 
-<input class="form-control mb-3" type="text" ng-model="criterioDeBusca" placeholder="O que você está buscando?">
+<input class="form-control mb-3" type="text" ng-model="criterioDeBusca" placeholder="O que você está buscando?" ng-model-options="{updateOn: 'default blur', debounce:{default: 500, blur: 0}}">
 <table class="table table-striped">
     <tr>
         <th></th>
@@ -21,15 +21,17 @@
         <th><a href="" ng-click="ordernarPor('nome')">Nome</a></th>
         <th><a href="" ng-click="ordernarPor('telefone')">Telefone</a></th>
         <th>Operadora</th>
+        <th>Preço</th>
         <th>Data</th>
         <th></th>
     </tr>
-    <tr ng-class="{selected: contato.selected}" ng-repeat="contato in contatos | limitTo: 20 | filter: {nome: criterioDeBusca} |  orderBy: criterioDeOrdenacao:direcaoDaOrdenacao">
+    <tr ng-class="{selected: contato.selected}" ng-repeat="contato in contatos | limitTo: 20 | filter: {nome: criterioDeBusca} |  orderBy: criterioDeOrdenacao:direcaoDaOrdenacao track by contato.id">
         <td><input type="checkbox" ng-model="contato.selected"></td>
         <td>{{contato.serial}}</td>
         <td title="{{contato.nome}}"> <a href="#/detalhesContato/{{contato.id}}">{{contato.nome | name | ellipsis:15}}</a> </td>
         <td>{{contato.telefone}}</td>
         <td>{{contato.operadora.nome}}</td>
+        <td>{{contato.operadora.preco}}</td>
         <td>{{contato.data | date:'EEE dd/MM/yyyy HH:mm'}}</td>
         <td style="position: relative;"><div style="width: 5px; height: 30px; position: absolute; right: 0;" ng-style="{'background-color': contato.color}"></div></td>
     </tr>

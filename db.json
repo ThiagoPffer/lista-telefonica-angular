@@ -14,19 +14,6 @@
       "id": 1
     },
     {
-      "nome": "Thiago Piffer",
-      "telefone": "9866-5287",
-      "operadora": {
-        "nome": "Embratel",
-        "codigo": 51,
-        "categoria": "Fixo",
-        "preco": 10
-      },
-      "serial": "AI\"S\"7H^9)",
-      "data": "2021-04-16T11:21:38.022Z",
-      "id": 2
-    },
-    {
       "data": "2021-04-19T11:06:21.431Z",
       "nome": "Thiago Piffer",
       "telefone": "9866-5287",
@@ -41,10 +28,29 @@
     },
     {
       "nome": "Thiago Piffer",
-      "telefone": "9866-5287",
-      "data": "2021-04-19T13:48:42.903Z",
-      "serial": "_ALPLUCYY'",
-      "id": 4
+      "telefone": "4420-3222",
+      "data": "2021-04-20T11:51:19.731Z",
+      "operadora": {
+        "nome": "GVT",
+        "codigo": 43,
+        "categoria": "Fixo",
+        "preco": 8
+      },
+      "serial": "#</TLYZ#]F",
+      "id": 5
+    },
+    {
+      "nome": "Fabio Ramos",
+      "telefone": "1004-4249",
+      "operadora": {
+        "nome": "Embratel",
+        "codigo": 51,
+        "categoria": "Fixo",
+        "preco": 10
+      },
+      "serial": "MRB@Q,XU-D",
+      "data": "2021-04-20T12:54:17.059Z",
+      "id": 6
     }
   ],
   "operadoras": [
