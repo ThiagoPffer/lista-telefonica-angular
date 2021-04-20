@@ -21,8 +21,6 @@ angular.module("listaTelefonica").directive("uiDate", function($filter) {
             ctrl.$parsers.push(function(value) {
                 if(value.length === 10){
                     var dateArray = value.split("/");
-                    console.log(dateArray);
-                    console.log(new Date(dateArray[2], dateArray[1-1], dateArray[0]).getTime());
                     return new Date(dateArray[2], dateArray[1-1], dateArray[0]).getTime();
                 };
             });
